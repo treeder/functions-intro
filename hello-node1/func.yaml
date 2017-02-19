@@ -1,0 +1,4 @@
+name: hello-node
+version: 0.0.1
+runtime: node
+entrypoint: node func.js

@@ -1,0 +1,4 @@
+name: treeder/hello-go
+version: 0.0.9
+runtime: go
+entrypoint: ./func

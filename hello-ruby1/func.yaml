@@ -1,0 +1,4 @@
+name: treeder/hello-ruby
+version: 0.0.3
+runtime: ruby
+entrypoint: ruby func.rb
