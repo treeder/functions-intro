@@ -32,10 +32,10 @@ func main() {
 			l, _ := strconv.Atoi(req.Header.Get("Content-Length"))
 			p := make([]byte, l)
 			r.Read(p)
-			fmt.Fprintf(&buf, "Hello %s\n", p)
-			for k, vs := range req.Header {
-				fmt.Fprintf(&buf, "ENV: %s %#v\n", k, vs)
-			}
+			fmt.Fprintf(&buf, "input: %s\n", p)
+			// for k, vs := range req.Header {
+			// fmt.Fprintf(&buf, "ENV: %s %#v\n", k, vs)
+			// }
 		}
 
 		res.Body = ioutil.NopCloser(&buf)

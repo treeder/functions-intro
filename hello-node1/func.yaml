@@ -1,4 +1,4 @@
-name: hello-node
-version: 0.0.1
+name: treeder/hello-node
+version: 0.0.4
 runtime: node
 entrypoint: node func.js
